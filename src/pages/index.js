@@ -1,12 +1,14 @@
-import React from "react";
+import React, { memo } from "react";
+
+import Navbar from "../components/Navbar";
 
 // markup
-const IndexPage = () => {
+const IndexPage = memo(() => {
   return (
-    <main>
-      <h1>hey</h1>
-    </main>
+    <>
+      <Navbar />
+    </>
   );
-};
+});
 
 export default IndexPage;
